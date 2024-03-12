@@ -1,0 +1,42 @@
+@media screen and (min-width: 1024px) {
+  .nav {
+    &-toggle {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .nav {
+    &-menu {
+      position: fixed;
+      top: -100%;
+      left: 0;
+      background-color: $bg-color-main;
+      box-shadow: 0 8px 16px hsla(230, 75%, 32%, 0.15);
+      width: 100%;
+      padding-block: 2.5rem 2rem;
+      transition: top 0.4s;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      row-gap: 1em;
+      text-align: center;
+    }
+
+    &-toggle {
+      display: flex;
+      cursor: pointer;
+    }
+
+    &-close {
+      display: flex;
+      cursor: pointer;
+      position: absolute;
+      top: 1.5em;
+      right: 1.5em;
+    }
+  }
+}
