@@ -1,5 +1,5 @@
 <template>
-  <div class="container-column">
+  <section class="container-column">
     <h2>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
       labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -11,7 +11,7 @@
       <img src="../assets/img/spin_wheel.png" alt="Spin Wheel" />
       <h1>Spin the wheel!</h1>
     </a>
-  </div>
+  </section>
 </template>
 
 <script setup>
@@ -50,6 +50,8 @@ function navigateToSpinner() {
       transform: rotate(720deg);
       -webkit-transform: rotate(720deg);
     }
+
+    background-color: $el-main-hover;
   }
 }
 </style>

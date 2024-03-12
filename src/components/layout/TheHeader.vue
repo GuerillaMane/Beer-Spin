@@ -4,9 +4,9 @@
       <div class="container-row">
         <img src="../../assets/img/beer_mug.png" alt="WorkLance icon" />
 
-        <h2>
+        <h1>
           <router-link :to="{ name: 'Home' }">Beer Spin</router-link>
-        </h2>
+        </h1>
       </div>
 
       <div class="nav-menu" :class="{ 'show-menu': isMobileMenuShown }">
@@ -43,9 +43,13 @@ function showMobileMenu() {
 </script>
 
 <style scoped lang="scss">
+h1 {
+  font-size: 28px;
+}
 .header {
-  height: 6rem;
-  box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
+  height: 7rem;
+  // box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
+  background-color: $bg-color-sup;
 }
 
 .container-row {
@@ -53,7 +57,7 @@ function showMobileMenu() {
   align-items: center;
 
   img {
-    height: 4rem;
+    height: 6rem;
   }
 
   img:hover {
@@ -96,6 +100,7 @@ function showMobileMenu() {
     a {
       text-decoration: none;
       color: black;
+      font-weight: 400;
       display: inline-block;
       padding: 0.5rem 1rem;
       border: 1px solid transparent;

@@ -16,11 +16,6 @@ import TheHeader from './components/layout/TheHeader.vue';
 </script>
 
 <style scoped>
-main {
-  width: min(100%, 32rem);
-  margin: 4rem auto;
-}
-
 .bounce-leave-active {
   animation: bounce-in 0.5s reverse;
 }

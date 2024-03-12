@@ -1,10 +1,27 @@
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: $bg-color-main;
 }
 
 a {
   text-decoration: none;
   color: black;
+}
+
+section {
+  width: min(100%, 32rem);
+  margin: 4rem auto;
+}
+
+.button {
+  background-color: $el-main;
+  border: none;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $el-main-hover;
+  }
 }
 
 .container {
